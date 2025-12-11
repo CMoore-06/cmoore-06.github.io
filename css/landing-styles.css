@@ -6,6 +6,7 @@ nav {
     top: 38px;
     z-index: 10;
     font-size: 14pt;
+    width: 100%;
 }
 
 #navcheck:checked~nav {
@@ -67,7 +68,7 @@ a:hover {
     text-decoration: underline;
 }
 
-h2 {
+h3, h2 {
     text-align: center;
 }
 
@@ -99,12 +100,15 @@ img {
 }
 
 /* Containers */
-/* table {
-    border-collapse: collapse;
-} */
+.programing {
+    border: 2px solid black;
+    padding: 3px;
+    position: relative;
+}
 
 td, th {
     border: 2px solid black;
+    padding: 3px;
 }
 
 td {
@@ -157,7 +161,7 @@ td {
 
 label {
     display: flex;
-    align-self: left;
+    align-self: start;
     position: fixed;
     top: 0px;
     font-size: 30px;
@@ -175,3 +179,48 @@ label, nav {
 }
 
 /* Media Queries */
+@media (min-width: 720px) { 
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    header, nav, label {
+        color: black
+    }
+
+    .programing, th, td, tr {
+        border-color: white;
+        left: calc(6.25rem - 2px);
+    }
+    
+    #bio img {
+        width: 70%;
+        float: left;
+        margin-right: 10px;
+        display: flex;
+        align-self: start;
+    }
+
+    #accomplishments {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #accomplishments img {
+        width: 70%;
+        float: right;
+    }
+
+    #responsive, #non-responsive {
+        width: 100%;
+        position: relative;
+        left: 1.5rem;
+        color: black;
+    }
+
+    #fit-for-fitness, #about-a-company {
+        margin-left: 1.25rem;
+    }
+}
