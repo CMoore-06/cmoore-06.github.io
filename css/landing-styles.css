@@ -3,7 +3,7 @@ nav {
     display: none;
     text-align: left;
     position: fixed;
-    top: 38px;
+    top: 40px;
     z-index: 10;
     font-size: 14pt;
     width: 100%;
@@ -20,8 +20,7 @@ header {
 }
 
 body {
-    border: 3px solid #999900;
-    background-color: darkgrey;
+    border: 3px solid yellow;
 }
 
 main {
@@ -44,7 +43,7 @@ footer a:hover {
 }
 
 label, nav, header, footer {
-    background-color: #999900;
+    background-color: #d8d802;
 }
 
 /* Text */
@@ -60,7 +59,7 @@ nav a:hover {
 
 /* Change the color of the links. They don't stand out enough. */
 a {
-    color: black;
+    color: darkgreen;
     text-decoration: none;
 }
 
@@ -91,7 +90,7 @@ figcaption {
 /* Images */
 img {
     width: 90%;
-    border: 4px solid darkgreen;
+    border: 4px solid green;
     border-radius: 10px;
 }
 
@@ -103,7 +102,8 @@ img {
 .programing {
     border: 2px solid black;
     padding: 3px;
-    position: relative;
+    justify-self: center;
+    width: 90%;
 }
 
 td, th {
@@ -132,6 +132,7 @@ td {
 
 #contact {
     margin-left: 20px;
+    margin-top: 1px;
 }
 
 #first-row, #second-row {
@@ -152,6 +153,14 @@ td {
     text-align: center;
     width: 40%;
     margin: 5px;
+}
+
+#bio, #accomplishments, #languages {
+    margin-bottom: 15px;
+}
+
+#socials {
+    margin-top: 2px;
 }
 
 /* Other */
@@ -181,8 +190,13 @@ label, nav {
 /* Media Queries */
 @media (min-width: 720px) { 
     body {
-        background-color: black;
-        color: white;
+        background-color: grey;
+        color: black;
+        border-color: yellow;
+    }
+
+    header, nav, footer, label {
+        background-color: #999900;
     }
 
     header, nav, label {
@@ -191,7 +205,10 @@ label, nav {
 
     .programing, th, td, tr {
         border-color: white;
-        left: calc(6.25rem - 2px);
+    }
+
+    .programing {
+        width: 60%;
     }
     
     #bio img {
@@ -222,5 +239,101 @@ label, nav {
 
     #fit-for-fitness, #about-a-company {
         margin-left: 1.25rem;
+    }
+
+    #accomplishments h3 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 920px) {
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    header {
+        margin-top: 0px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: sticky;
+        top: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+
+    a {
+        color: green;
+    }
+
+    label {
+        display: none;
+    }
+
+    #anchor {
+        display: none;
+    }
+
+    figure {
+        width: 40%;
+    }
+
+    #bio figure {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    figcaption {
+        border: 4px solid lightgreen;
+        border-radius: 10px;
+    }
+
+    #bio p {
+        position: relative;
+        left: 3px;
+    }
+
+    ul {
+        position: relative;
+        left: 13px;
+    }
+
+    #accomplishments, #languages {
+        width: 50%;
+    }
+
+    #accomplishments figure {
+        width: 90%;
+    }
+
+    #flex {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+
+    span {
+        text-align: left;
+    }
+
+    #first-row, #second-row {
+        flex-direction: row;
+    }
+
+    .card, #bnb, #pawfect-pet-care {
+        width: 30%;
+    }
+
+    .card {
+        background-color: darkgrey;
     }
 }
