@@ -165,6 +165,11 @@ td {
     margin-top: 2px;
 }
 
+/* Remove or edit this CSS once I have more client websites. */
+    #the-lost-coin {
+        justify-self: center;
+    }
+
 /* Other */
 #navcheck {
     display: none;
@@ -237,11 +242,6 @@ label, nav {
         position: relative;
         left: 1.5rem;
         color: black;
-    }
-
-    /* Remove or edit this CSS once I have more client websites. */
-    #the-lost-coin {
-        justify-self: center;
     }
 
     #fit-for-fitness, #about-a-company {
