@@ -3,15 +3,10 @@ nav {
     display: none;
     text-align: left;
     position: fixed;
-    top: 40px;
+    top: 48px;
     z-index: 10;
     font-size: 14pt;
-    width: 100%;
-}
-
-#navcheck:checked~nav {
-    display: flex;
-    flex-direction: column;
+    width: 97%;
 }
 
 header {
@@ -42,7 +37,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-label, nav, header, footer {
+#show, nav, header, footer {
     background-color: #d8d802;
 }
 
@@ -130,6 +125,7 @@ td {
     flex-direction: column;
     font-size: 10pt;
     margin-left: 10px;
+    display: none;
 }
 
 #contact {
@@ -165,6 +161,12 @@ td {
     margin-top: 2px;
 }
 
+#dropdown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 /* Remove or edit this CSS once I have more client websites. */
     #the-lost-coin {
         justify-self: center;
@@ -175,7 +177,7 @@ td {
     display: none;
 }
 
-label {
+#show {
     display: flex;
     align-self: start;
     position: fixed;
@@ -184,7 +186,7 @@ label {
     width: 96.75%;
 }
 
-label, nav {
+#show, nav {
     position: fixed;
     left: 8px;
 }
@@ -192,6 +194,19 @@ label, nav {
 .card button {
     background-color: green;
     font-size: 20px;
+}
+
+.shownav {
+    position: static;
+    font-size: 15px;
+}
+
+#up {
+    display: none;
+}
+
+#show, #up, #down {
+    cursor: default;
 }
 
 /* Media Queries */
@@ -202,11 +217,11 @@ label, nav {
         border-color: yellow;
     }
 
-    header, nav, footer, label {
+    header, nav, footer, #show {
         background-color: #999900;
     }
 
-    header, nav, label {
+    header, nav, #show {
         color: black
     }
 
@@ -256,7 +271,7 @@ label, nav {
 @media (min-width: 920px) {
     body {
         background-color: black;
-        color: white;
+        color: #ffffff;
     }
 
     header {
@@ -281,11 +296,15 @@ label, nav {
         color: green;
     }
 
-    label {
+    #show {
         display: none;
     }
 
     #anchor {
+        display: none;
+    }
+
+    #down {
         display: none;
     }
 
