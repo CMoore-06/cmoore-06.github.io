@@ -13,22 +13,28 @@
 <body>
     <header>
         <div id="heading">
-            <h1>Website Development Projects</h1>
+            <h1 style="z-index: 10;">Cale Moore</h1>
+            <h2>Future Programer/Website Developer</h2>
         </div>
     </header>
 
-    <label for="navcheck">&#9776;</label>
-    <input type="checkbox" id="navcheck">
-    <nav>
+    <span id="show" onclick="showNav()" style="position: fixed; top:10px; left: 13px;">&#9776;</span>
+    <nav id="nav" style="left: 13px;">
         <div id="home-page">
-            <a href="index.html">Home</a>
+            <div id="dropdown">
+                <a href="index.html">Home</a>
+                <span onclick="showNav2()" id="down"><i class="fa-solid fa-angle-down"></i></span>
+                <span onclick="showNav2()" id="up"><i class="fa-solid fa-angle-up"></i></span>
+            </div>
+
             <div id="anchor">
                 <a href="index.html#bio">About Me</a>
                 <a href="index.html#accomplishments">Accomplishments</a>
                 <a href="index.html#languages">Coding/Programing Languages I know</a>
                 <a href="index.html#work">Previous Work Experience</a>
+                <a href="index.html#skills">Skills</a>
             </div>
-            </div>
+        </div>
         <a href="webdev.html">Website Development Projects</a>
         <a href="programing.html">Programing Projects</a>
         <a href="contact.html">Contact Me</a>
@@ -131,4 +137,39 @@
         </div>
     </footer>
 </body>
+
+<script>
+    function showNav() {
+        const nav = document.getElementById("nav")
+
+        if(nav.style.display === "none") {
+            nav.style.display = "flex";
+            nav.style.flexDirection = "column";
+        }
+
+        else {
+            nav.style.display = "none";
+        }
+    }
+
+    function showNav2() {
+        const anchor = document.getElementById("anchor")
+        const up = document.getElementById("up")
+        const down = document.getElementById("down")
+
+        if(anchor.style.display === "none") {
+            anchor.style.display = "flex";
+            anchor.style.flexDirection = "column";
+            up.style.display = "block";
+            down.style.display = "none";
+        }
+
+        else {
+            anchor.style.display = "none";
+            up.style.display = "none";
+            down.style.display = "block";
+        }
+    }
+</script>
+
 </html>

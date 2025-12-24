@@ -32,6 +32,7 @@
                 <a href="index.html#accomplishments">Accomplishments</a>
                 <a href="index.html#languages">Coding/Programing Languages I know</a>
                 <a href="index.html#work">Previous Work Experience</a>
+                <a href="index.html#skills">Skills</a>
             </div>
         </div>
         <a href="webdev.html">Website Development Projects</a>
@@ -62,6 +63,7 @@
             </ul>
 
             <p>My many extracuricular excapades taught me many valuble skills. Archery taught me how to calm myself under pressure, Science Olympiad gave me preperation and time manegment skills, and Band also helped with time manegment, as wells as teach me to how to take orders. Theater helped me learn to think outside of the box.</p>
+            <p>For for information about my skills please visit the <a href="#skills">Skills</a> section.</p>
         </div>
 &nbsp;
         
@@ -115,8 +117,8 @@
 
                         <tr class="js">
                             <th scope="row">Javascript</th>
-                            <td>X</td>
                             <td></td>
+                            <td>X</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -167,6 +169,20 @@
             <h3>-- Previous Work Experience --</h3>
             <p>Right now I'm still working at my first job. I started at McDonald's in the summer of 2022 and saw no reason to leave until now. I want to have a job in the tech world, where I can make a living doing my passion.</p>
         </div>
+&nbsp;
+        <div id="skills">
+            <h3>-- Skills --</h3>
+            <p>In this section you'll find an extended list of my skills that would apply to the job you're considering me for.</p>
+            
+            <h4>Working Collaboratively</h4>
+            <p>I do identify as a bit of an introvert so I'm great with working by myself, but I'm also great at working with a team. I'm very personable and I always try my best to respect the ideas and opinions of others.</p>
+
+            <h4>Critical Thinking/Problem Solving</h4>
+            <p>Critical thinking, especially in terms of problem solving, is a must when it comes to the world of computer science. As such, my ablility to do both of these things has increased drastically since I started. I'll use all of my knowledge to either fix the problem or find a way around it. Not only that, but I love to play Dungeons and Dragons, a game which involves meeting regularly to work with a team to solve problems.</p>
+
+            <h4>Creativity</h4>
+            <p>I've always been a very creative person. As such I can easily come up with ideas that could be of great benifit to your company. I hope to include some projects that show my creativity soon.</p>
+        </div>
     </main>
 
     <footer>
@@ -181,39 +197,40 @@
         </div>
     </footer>
 
-    <script>
-        function showNav() {
-            const nav = document.getElementById("nav")
-
-            if(nav.style.display === "none") {
-                nav.style.display = "flex";
-                nav.style.flexDirection = "column";
-            }
-
-            else {
-                nav.style.display = "none";
-            }
-        }
-
-        function showNav2() {
-            const anchor = document.getElementById("anchor")
-            const up = document.getElementById("up")
-            const down = document.getElementById("down")
-
-            if(anchor.style.display === "none") {
-                anchor.style.display = "flex";
-                anchor.style.flexDirection = "column";
-                up.style.display = "block";
-                down.style.display = "none";
-            }
-
-            else {
-                anchor.style.display = "none";
-                up.style.display = "none";
-                down.style.display = "block";
-            }
-        }
-    </script>
-    
 </body>
+
+<script>
+    function showNav() {
+        const nav = document.getElementById("nav")
+
+        if(nav.style.display === "none") {
+            nav.style.display = "flex";
+            nav.style.flexDirection = "column";
+        }
+
+        else {
+            nav.style.display = "none";
+        }
+    }
+
+    function showNav2() {
+        const anchor = document.getElementById("anchor")
+        const up = document.getElementById("up")
+        const down = document.getElementById("down")
+
+        if(anchor.style.display === "none") {
+            anchor.style.display = "flex";
+            anchor.style.flexDirection = "column";
+            up.style.display = "block";
+            down.style.display = "none";
+        }
+
+        else {
+            anchor.style.display = "none";
+            up.style.display = "none";
+            down.style.display = "block";
+        }
+    }
+</script>
+
 </html>
